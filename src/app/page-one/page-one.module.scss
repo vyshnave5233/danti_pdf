@@ -1,0 +1,172 @@
+.container {
+  max-width: 90%;
+  margin: 40px auto 40px auto;
+
+  background-color: #fff;
+
+  margin-top: 20px;
+}
+
+.blueprintSection {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 800;
+
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.5;
+  text-align: left;
+  text-underline-position: from-font;
+  margin-bottom: 25px;
+  text-decoration-skip-ink: none;
+}
+
+.scoreCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+
+  height: 89px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.scoreLabel {
+  font-family: "Manrope";
+  font-size: 10px;
+  font-weight: 700;
+
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.scoreValue {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  gap: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.assessmentDate {
+  font-family: Manrope;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 10.4px;
+
+  color: #818b9b;
+}
+
+.divider {
+  width: 1px;
+  height: 60px;
+  background-color: #d7d7d7;
+}
+
+.consultantDetails {
+  text-align: left;
+}
+
+.detailsTitle {
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #3c2c00;
+  margin-bottom: 8px;
+}
+
+.consultantInfo {
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+}
+
+.consultantImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.consultantName {
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1d2c44;
+}
+
+.consultantEmail,
+.consultantPhone {
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #5f5f5f;
+}
+
+.chart {
+  margin-top: 20px;
+}
+.detailContact {
+  display: flex;
+  flex-direction: column;
+}
+.riskPoints {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+
+  .riskItem {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 500;
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  }
+}

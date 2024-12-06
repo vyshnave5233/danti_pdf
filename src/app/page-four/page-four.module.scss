@@ -1,0 +1,113 @@
+.container {
+  padding: 20px 40px;
+}
+.header {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .backgroundImage {
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 10px; /* Ensures the content is at the bottom of the image */
+    display: flex;
+    justify-content: flex-start; /* Spreads the items horizontally */
+    align-items: flex-end; /* Aligns the items vertically at the bottom */
+    width: 90%;
+    padding: 0 20px; /* Adds some horizontal padding for spacing */
+    color: white;
+    gap: 10px;
+
+    .iconAndTitle {
+      display: flex;
+      align-items: center; /* Keeps the icon and title centered vertically */
+      gap: 10px;
+
+      h1 {
+        font-size: 18px; /* Adjust font size for better visibility */
+        font-weight: bold;
+        margin: 0; /* Removes default margin */
+      }
+
+      img {
+        width: 24px; /* Ensures the icon size matches */
+        height: 24px;
+      }
+    }
+
+    .score {
+      background: #ff6d00;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+.content {
+  margin-top: 32px;
+}
+
+.innerContent {
+  display: flex;
+  h2 {
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 10px;
+    color: #111111;
+  }
+  p {
+    margin-bottom: 10px;
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #353535;
+  }
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  strong {
+    font-family: Manrope;
+    font-size: 8px;
+    font-weight: 800;
+    line-height: 19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #353535;
+  }
+  p {
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #353535;
+  }
+}

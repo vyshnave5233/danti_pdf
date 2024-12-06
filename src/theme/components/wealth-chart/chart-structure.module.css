@@ -1,0 +1,256 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+   /* Increased to accommodate text */
+    margin: 0 auto;
+  }
+  
+  .container::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .chartWrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    border-radius: 50%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 540px !important;
+    height: 540px !important;
+    /* background-color: rebeccapurple !important; */
+    /* box-shadow: 0px 9.91px 14.86px 0px rgba(131, 137, 146, 1); */
+  }
+  
+  .centerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    width: 33%;
+    height: 33%;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 10;
+    border: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .centerContent p {
+    margin: 0.25rem 0;
+  }
+  
+  .centerContent p:first-child {
+    font-weight: bold;
+    font-size: 3.125rem;
+  }
+  
+  .centerContent p:not(:first-child) {
+    font-size: 0.875rem;
+  }
+  
+  .d {
+    background-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    width: 218px;
+    height: 218px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+  }
+  .img {
+    box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+    background-color: aquamarine;
+    border-radius: 50%;
+    & img {
+      position: absolute;
+      left: 3px;
+      top: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 212px;
+      height: 212px;
+      border-radius: 50%;
+    }
+    .dantiDiv {
+   
+      box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+  
+      width: 216px;
+      height: 216px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 51%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .name {
+      font-family: "manrope";
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+    }
+    .sub {
+      font-family: "manrope";
+      font-size: 25px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  .img-small {
+    box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+    background-color: aquamarine;
+    border-radius: 50%;
+    display: none;
+    & img {
+      position: absolute;
+      left: 3px;
+      top: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 212px;
+      height: 212px;
+      border-radius: 50%;
+    }
+  }
+  .back {
+    /* background-color: aquamarine; */
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 500px; */
+  }
+  .Doughnut {
+    & canvas {
+      width: 200px;
+      z-index: 10;
+    }
+  }
+  
+  .chartWrapper {
+    width: 450px !important;
+    height: 450px !important;
+    & canvas {
+    }
+  }
+  
+  .piller-small {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .chartWrapper {
+      width: 350px !important;
+      height: 350px !important;
+      & canvas {
+      }
+    }
+    .d {
+      background-color: transparent;
+      background-color: rgba(220, 218, 218, 0.627);
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+    }
+    .img {
+      box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+      background-color: aquamarine;
+      border-radius: 50%;
+      & img {
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 142px;
+        height: 142px;
+        border-radius: 50%;
+        box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+      }
+      .dantiDiv {
+      }
+  
+      .name {
+        font-family: "manrope";
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      .sub {
+        font-family: "manrope";
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    .centerContent {
+    }
+    .back {
+      width: 300px;
+      height: 300px;
+    }
+    .piller-small {
+      display: block;
+    }
+    .img {
+      display: none;
+    }
+    .img-small {
+      box-shadow: 0px 4.95px 4.95px 0px rgba(0, 0, 0, 0.25);
+      background-color: aquamarine;
+      border-radius: 50%;
+      display: block;
+      & img {
+        position: absolute;
+        left: -2px;
+        top: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 152px;
+        height: 152px;
+        border-radius: 50%;
+      }
+    }
+  }
+  

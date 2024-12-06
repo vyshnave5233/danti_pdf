@@ -1,0 +1,64 @@
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px 40px;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.recommendations {
+  margin-bottom: 20px;
+
+  &__title {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    margin-bottom: 10px;
+    color: #202123;
+  }
+
+  &__card {
+    background-color: #f8f2e1;
+    padding: 10px;
+    padding-bottom: 15px;
+    height: 186px;
+    width: 515px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e7c772;
+
+    &__text {
+      font-family: Manrope;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      padding-bottom: 5px;
+      letter-spacing: 0.3;
+      color: #202123;
+    }
+  }
+}
+
+.footer {
+  &__text {
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111111;
+
+    margin: 10px 0;
+    letter-spacing: 0.3;
+  }
+}
